@@ -4,6 +4,7 @@ import { ProgressBar } from './components/ProgressBar';
 import { Language, AppState } from './types/ocr';
 import './App.css';
 import OCRResults from './components/OCRResults';
+import Tesseract from 'tesseract.js';
 
 function App() {
   const [appState, setAppState] = useState<AppState>({
@@ -33,22 +34,63 @@ function App() {
     console.log('Language changed to:', language);
   };
 
-  const startOCR = () => {
-    if (!appState.selectedImage) {
-      alert('Please select an image first!');
-      return;
-    }
+  const startOCR = async () => {
+  if (!appState.selectedImage) {
+    alert('Please select an image first!');
+    return;
+  }
+
+  setAppState(prev => ({
+    ...prev,
+    isProcessing: true,
+    progress: 0,
+    progressMessage: 'Initializing OCR...',
+    ocrResult: null,
+    error: null
+  }));
+
+  try {
+    const result = await Tesseract.recognize(
+      appState.selectedImage,
+      appState.selectedLanguage,
+      {
+        logger: (info) => {
+          console.log(info);
+          if (info.status === 'recognizing text') {
+            setAppState(prev => ({
+              ...prev,
+              progress: Math.round(info.progress * 100),
+              progressMessage: `Recognizing text... ${Math.round(info.progress * 100)}%`
+            }));
+          }
+        }
+      }
+    );
+
+    // Process the result into our format
+    // Process the result into our format
+    const ocrResult = {
+      text: result.data.text,
+      confidence: result.data.confidence,
+      words: []
+    };
 
     setAppState(prev => ({
       ...prev,
-      isProcessing: true,
-      progress: 0,
-      progressMessage: 'Starting OCR...'
+      isProcessing: false,
+      progress: 100,
+      progressMessage: 'OCR Complete!',
+      ocrResult: ocrResult
     }));
 
-    // TODO: We'll implement actual OCR processing next!
-    console.log('OCR would start here...');
-  };
+  } catch (error) {
+    setAppState(prev => ({
+      ...prev,
+      isProcessing: false,
+      error: `OCR failed: ${error}`
+    }));
+  }
+};
 
   return (
     <div className="App" style={{ 
