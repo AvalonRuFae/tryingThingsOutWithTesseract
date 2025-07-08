@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Composition Corrector - Web Edition</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1><i class="fas fa-spell-check"></i> Student Composition Corrector</h1>
+            <p>Upload a student composition image for instant OCR analysis and typo detection</p>
+        </header>
+
+        <main class="main-content">
+            <!-- Upload Section -->
+            <section class="upload-section">
+                <div class="upload-area" id="uploadArea">
+                    <i class="fas fa-cloud-upload-alt upload-icon"></i>
+                    <p>Drop an image here or <span class="upload-link">click to browse</span></p>
+                    <input type="file" id="imageInput" accept="image/*" hidden>
+                </div>
+            </section>
+
+            <!-- Processing Section -->
+            <section class="processing-section" id="processingSection" style="display: none;">
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <p class="progress-text" id="progressText">Initializing OCR...</p>
+                    <button class="btn btn-secondary" onclick="cancelProcessing()" style="margin-top: 20px;">
+                        <i class="fas fa-times"></i> Cancel
+                    </button>
+                </div>
+            </section>
+
+            <!-- Results Section -->
+            <section class="results-section" id="resultsSection" style="display: none;">
+                <div class="results-grid">
+                    <!-- Original Image -->
+                    <div class="result-card">
+                        <h3><i class="fas fa-image"></i> Original Image</h3>
+                        <div class="image-container">
+                            <img id="originalImage" alt="Original composition">
+                        </div>
+                    </div>
+
+                    <!-- OCR Results -->
+                    <div class="result-card">
+                        <h3><i class="fas fa-text-width"></i> Extracted Text</h3>
+                        <div class="text-results">
+                            <div class="stats">
+                                <span class="stat">
+                                    <i class="fas fa-align-left"></i>
+                                    Words: <span id="wordCount">0</span>
+                                </span>
+                                <span class="stat">
+                                    <i class="fas fa-percentage"></i>
+                                    Confidence: <span id="confidence">0%</span>
+                                </span>
+                                <span class="stat">
+                                    <i class="fas fa-clock"></i>
+                                    Time: <span id="processingTime">0s</span>
+                                </span>
+                            </div>
+                            <div class="extracted-text" id="extractedText"></div>
+                        </div>
+                    </div>
+
+                    <!-- Typo Detection -->
+                    <div class="result-card">
+                        <h3><i class="fas fa-exclamation-triangle"></i> Typo Detection</h3>
+                        <div class="typo-results">
+                            <div class="typo-stats">
+                                <span class="typo-count" id="typoCount">0 issues found</span>
+                            </div>
+                            <div class="typo-list" id="typoList"></div>
+                        </div>
+                    </div>
+
+                    <!-- Annotated Image -->
+                    <div class="result-card">
+                        <h3><i class="fas fa-highlighter"></i> Annotated Image</h3>
+                        <div class="image-container">
+                            <canvas id="annotatedCanvas"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="action-buttons">
+                    <button class="btn btn-secondary" onclick="resetApp()">
+                        <i class="fas fa-redo"></i> Process Another Image
+                    </button>
+                    <button class="btn btn-primary" onclick="downloadResults()">
+                        <i class="fas fa-download"></i> Download Results
+                    </button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Tesseract.js CDN -->
+    <script src="https://unpkg.com/tesseract.js@5/dist/tesseract.min.js"></script>
+    <script src="js/typo-detector.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
