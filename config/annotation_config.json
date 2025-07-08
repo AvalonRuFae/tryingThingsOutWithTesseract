@@ -1,0 +1,35 @@
+{
+    "annotation_styles": {
+        "spelling_error": {
+            "color": [255, 0, 0],
+            "type": "circle",
+            "thickness": 2
+        },
+        "grammar_error": {
+            "color": [255, 165, 0],
+            "type": "underline", 
+            "thickness": 3
+        },
+        "suggestion": {
+            "color": [0, 128, 0],
+            "type": "highlight",
+            "thickness": 2
+        },
+        "deletion": {
+            "color": [255, 0, 0],
+            "type": "strikethrough",
+            "thickness": 2
+        },
+        "insertion": {
+            "color": [0, 128, 0],
+            "type": "caret",
+            "thickness": 2
+        }
+    },
+    "fonts": {
+        "default_font": "/System/Library/Fonts/Arial.ttf",
+        "fallback_font": "default",
+        "comment_font_size": 12,
+        "label_font_size": 10
+    }
+}

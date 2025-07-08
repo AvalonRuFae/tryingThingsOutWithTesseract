@@ -1,0 +1,19 @@
+{
+    "tesseract": {
+        "default_config": "--oem 3 --psm 6",
+        "language": "eng",
+        "char_whitelist": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,!?'\"-()[]{}@ ",
+        "confidence_threshold": 60
+    },
+    "preprocessing": {
+        "denoise": true,
+        "adaptive_threshold": true,
+        "contrast_enhancement": false,
+        "deskew": false
+    },
+    "output": {
+        "save_visualizations": true,
+        "save_json_results": true,
+        "image_format": "png"
+    }
+}
