@@ -21,6 +21,46 @@
                     <i class="fas fa-cloud-upload-alt upload-icon"></i>
                     <p>Drop an image here or <span class="upload-link">click to browse</span></p>
                     <input type="file" id="imageInput" accept="image/*" hidden>
+                    
+                    <!-- Language Selection -->
+                    <div style="margin-top: 20px;">
+                        <label for="languageSelect" style="font-weight: 600; margin-right: 10px;">🌐 OCR Language:</label>
+                        <select id="languageSelect" style="padding: 8px 12px; border: 1px solid #ddd; border-radius: 5px; font-size: 14px;">
+                            <option value="eng">English</option>
+                            <option value="chi_sim">Chinese Simplified (简体中文)</option>
+                            <option value="chi_tra">Chinese Traditional (繁體中文)</option>
+                            <option value="jpn">Japanese (日本語)</option>
+                            <option value="kor">Korean (한국어)</option>
+                            <option value="spa">Spanish</option>
+                            <option value="fra">French</option>
+                            <option value="deu">German</option>
+                        </select>
+                    </div>
+                    
+                    <div style="margin-top: 15px; font-size: 0.9rem; color: #666;">
+                        💡 <strong>Tips:</strong> For faster processing, use clear images under 2MB. Processing typically takes 30-60 seconds.
+                        <br>
+                        <strong>Chinese OCR:</strong> Use high-contrast, clear printed text. First load downloads 15MB language data.
+                    </div>
+                    
+                    <!-- Chinese OCR Tips -->
+                    <div class="tips-section" id="chineseTips" style="display: none; margin-top: 15px; padding: 15px; background: #f8f9fa; border-left: 4px solid #007bff; border-radius: 5px;">
+                        <h4 style="margin: 0 0 10px 0; color: #333;">Chinese OCR Troubleshooting</h4>
+                        <ul style="margin: 10px 0; padding-left: 20px; font-size: 0.85rem;">
+                            <li>📐 Use high-resolution images (at least 300 DPI)</li>
+                            <li>🌓 Ensure good contrast between text and background</li>
+                            <li>✍️ Printed text works much better than handwritten</li>
+                            <li>🔄 Try both Simplified and Traditional if results are poor</li>
+                            <li>📏 Avoid blurry, skewed, or rotated images</li>
+                            <li>🔍 Larger text generally produces better results</li>
+                        </ul>
+                        <p style="margin: 10px 0 0 0; font-size: 0.85rem;">
+                            <strong>🔧 Debug Tool:</strong> 
+                            <a href="debug_chinese_ocr.html" target="_blank" style="color: #007bff; text-decoration: none;">
+                                Open Advanced Chinese OCR Diagnostics →
+                            </a>
+                        </p>
+                    </div>
                 </div>
             </section>
 

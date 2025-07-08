@@ -29,6 +29,18 @@ class TypoDetector {
             'accomodate': 'accommodate'
         };
 
+        // Common Chinese typos (Simplified Chinese examples)
+        this.chineseTypoCorrections = {
+            '的': '地', // Common de/di confusion
+            '在': '再', // Common zai confusion  
+            '他': '她', // Gender confusion
+            '那': '哪', // na/nei confusion
+            '做': '作', // zuo confusion
+            '像': '象', // xiang confusion
+            '以': '已', // yi confusion
+            '练': '炼', // lian confusion
+        };
+
         // Basic English word list (simplified)
         this.commonWords = new Set([
             'the', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for', 'of', 'with',

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinese OCR Debug Tool</title>
+    <script src='https://unpkg.com/tesseract.js@v4.1.1/dist/tesseract.min.js'></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .debug-section {
+            border: 1px solid #ddd;
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .debug-title {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .results {
+            background: #f5f5f5;
+            padding: 10px;
+            border-radius: 3px;
+            margin: 10px 0;
+            white-space: pre-wrap;
+            font-family: monospace;
+        }
+        .error {
+            background: #ffebee;
+            color: #c62828;
+        }
+        .success {
+            background: #e8f5e8;
+            color: #2e7d32;
+        }
+        .warning {
+            background: #fff3e0;
+            color: #f57c00;
+        }
+        .image-preview {
+            max-width: 400px;
+            border: 1px solid #ccc;
+            margin: 10px 0;
+        }
+        button {
+            background: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background: #45a049;
+        }
+        button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+        .progress {
+            width: 100%;
+            height: 20px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 10px 0;
+        }
+        .progress-bar {
+            height: 100%;
+            background-color: #4CAF50;
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+        .canvas-container {
+            margin: 20px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🔍 Chinese OCR Debug Tool</h1>
+    <p>This tool helps diagnose Chinese OCR issues by testing different configurations and providing detailed debug information.</p>
+
+    <div class="debug-section">
+        <div class="debug-title">📁 Image Upload</div>
+        <input type="file" id="imageInput" accept="image/*">
+        <button onclick="runDiagnostics()">🚀 Run Full Diagnostics</button>
+        <button onclick="testChinese()">Test Chinese Only</button>
+        <button onclick="clearResults()">🗑️ Clear Results</button>
+        <div id="imagePreview"></div>
+    </div>
+
+    <div class="debug-section">
+        <div class="debug-title">📊 Progress</div>
+        <div class="progress">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+        <div id="progressText">Ready to test</div>
+    </div>
+
+    <div id="results"></div>
+
+    <script>
+        let currentImage = null;
+        const resultsDiv = document.getElementById('results');
+        const progressBar = document.getElementById('progressBar');
+        const progressText = document.getElementById('progressText');
+
+        document.getElementById('imageInput').addEventListener('change', (e) => {
+            if (e.target.files.length > 0) {
+                currentImage = e.target.files[0];
+                displayImagePreview(currentImage);
+            }
+        });
+
+        function displayImagePreview(file) {
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                document.getElementById('imagePreview').innerHTML = 
+                    `<img src="${e.target.result}" class="image-preview" alt="Preview">`;
+            };
+            reader.readAsDataURL(file);
+        }
+
+        function updateProgress(percent, message) {
+            progressBar.style.width = percent + '%';
+            progressText.textContent = message;
+        }
+
+        function addResult(title, content, type = 'results') {
+            const div = document.createElement('div');
+            div.className = 'debug-section';
+            div.innerHTML = `
+                <div class="debug-title">${title}</div>
+                <div class="${type}">${content}</div>
+            `;
+            resultsDiv.appendChild(div);
+        }
+
+        function clearResults() {
+            resultsDiv.innerHTML = '';
+            updateProgress(0, 'Ready to test');
+        }
+
+        async function preprocessImage(file) {
+            return new Promise((resolve) => {
+                const canvas = document.createElement('canvas');
+                const ctx = canvas.getContext('2d');
+                const img = new Image();
+                
+                img.onload = () => {
+                    // Scale up for better OCR
+                    const scale = 2;
+                    canvas.width = img.width * scale;
+                    canvas.height = img.height * scale;
+                    
+                    // Enable high-quality scaling
+                    ctx.imageSmoothingEnabled = false;
+                    
+                    // Draw scaled image
+                    ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+                    
+                    // Enhance contrast for Chinese text
+                    const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+                    const data = imageData.data;
+                    
+                    for (let i = 0; i < data.length; i += 4) {
+                        // Convert to grayscale
+                        const gray = data[i] * 0.299 + data[i + 1] * 0.587 + data[i + 2] * 0.114;
+                        
+                        // Apply contrast enhancement
+                        const enhanced = Math.pow(gray / 255, 0.5) * 255;
+                        
+                        data[i] = enhanced;     // Red
+                        data[i + 1] = enhanced; // Green
+                        data[i + 2] = enhanced; // Blue
+                    }
+                    
+                    ctx.putImageData(imageData, 0, 0);
+                    
+                    canvas.toBlob(resolve, 'image/png', 1.0);
+                };
+                
+                img.src = URL.createObjectURL(file);
+            });
+        }
+
+        async function testLanguage(language, languageName, image) {
+            try {
+                addResult(`🧪 Testing ${languageName} (${language})`, 'Initializing...', 'warning');
+                
+                const worker = await Tesseract.createWorker(language, 1, {
+                    logger: (m) => {
+                        console.log(`${language}:`, m);
+                        if (m.status === 'recognizing text') {
+                            updateProgress(50 + (m.progress * 30), `${languageName}: ${Math.round(m.progress * 100)}%`);
+                        }
+                    }
+                });
+
+                // Set parameters optimized for Chinese
+                if (language.startsWith('chi_')) {
+                    await worker.setParameters({
+                        tessedit_pageseg_mode: Tesseract.PSM.SINGLE_BLOCK,
+                        tessedit_ocr_engine_mode: Tesseract.OEM.LSTM_ONLY,
+                        preserve_interword_spaces: '1'
+                    });
+                }
+
+                const { data } = await worker.recognize(image);
+                await worker.terminate();
+
+                // Analyze results
+                const text = data.text.trim();
+                const confidence = data.confidence;
+                const wordCount = data.words.length;
+                const chineseChars = (text.match(/[\u4e00-\u9fff]/g) || []).length;
+                const hasGibberish = /[^a-zA-Z0-9\s\u4e00-\u9fff\u3000-\u303f\uff00-\uffef]/g.test(text);
+
+                let resultType = 'success';
+                let status = '✅ SUCCESS';
+                
+                if (confidence < 30) {
+                    resultType = 'error';
+                    status = '❌ LOW CONFIDENCE';
+                } else if (chineseChars === 0 && language.startsWith('chi_')) {
+                    resultType = 'error';
+                    status = '❌ NO CHINESE DETECTED';
+                } else if (hasGibberish) {
+                    resultType = 'warning';
+                    status = '⚠️ GIBBERISH DETECTED';
+                }
+
+                const result = `
+${status}
+Confidence: ${confidence.toFixed(2)}%
+Words detected: ${wordCount}
+Chinese characters: ${chineseChars}
+Text length: ${text.length}
+
+First 200 characters:
+"${text.substring(0, 200)}"
+
+Character analysis:
+${text.split('').slice(0, 20).map(char => 
+    `'${char}' (U+${char.charCodeAt(0).toString(16).toUpperCase()})`
+).join('\n')}
+                `;
+
+                addResult(`📊 ${languageName} Results`, result, resultType);
+                
+                return { language, confidence, text, wordCount, chineseChars, hasGibberish };
+
+            } catch (error) {
+                addResult(`❌ ${languageName} Error`, error.message, 'error');
+                return { language, error: error.message };
+            }
+        }
+
+        async function runDiagnostics() {
+            if (!currentImage) {
+                alert('Please select an image first');
+                return;
+            }
+
+            clearResults();
+            updateProgress(0, 'Starting diagnostics...');
+
+            // Image info
+            addResult('📄 Image Information', `
+File name: ${currentImage.name}
+Size: ${(currentImage.size / 1024 / 1024).toFixed(2)} MB
+Type: ${currentImage.type}
+            `);
+
+            updateProgress(10, 'Preprocessing image...');
+            const preprocessed = await preprocessImage(currentImage);
+            
+            // Add canvas preview of preprocessed image
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            const img = new Image();
+            
+            img.onload = () => {
+                canvas.width = Math.min(400, img.width);
+                canvas.height = (img.height * canvas.width) / img.width;
+                ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+                
+                const canvasDiv = document.createElement('div');
+                canvasDiv.className = 'canvas-container';
+                canvasDiv.innerHTML = '<div class="debug-title">🖼️ Preprocessed Image</div>';
+                canvasDiv.appendChild(canvas);
+                resultsDiv.appendChild(canvasDiv);
+            };
+            img.src = URL.createObjectURL(preprocessed);
+
+            updateProgress(20, 'Testing multiple Chinese configurations...');
+
+            const languages = [
+                { code: 'chi_sim', name: 'Chinese Simplified' },
+                { code: 'chi_tra', name: 'Chinese Traditional' },
+                { code: 'chi_sim+eng', name: 'Chinese Simplified + English' },
+                { code: 'eng', name: 'English (for comparison)' }
+            ];
+
+            const results = [];
+            for (let i = 0; i < languages.length; i++) {
+                const lang = languages[i];
+                updateProgress(20 + (i * 20), `Testing ${lang.name}...`);
+                const result = await testLanguage(lang.code, lang.name, preprocessed);
+                results.push(result);
+            }
+
+            updateProgress(100, 'Diagnostics complete!');
+
+            // Summary
+            const summary = `
+🎯 SUMMARY:
+${results.map(r => {
+    if (r.error) return `❌ ${r.language}: ERROR`;
+    return `${r.confidence > 50 ? '✅' : r.confidence > 30 ? '⚠️' : '❌'} ${r.language}: ${r.confidence.toFixed(1)}% confidence`;
+}).join('\n')}
+
+📋 RECOMMENDATIONS:
+${generateRecommendations(results)}
+            `;
+            
+            addResult('📋 Final Summary', summary, 'success');
+        }
+
+        async function testChinese() {
+            if (!currentImage) {
+                alert('Please select an image first');
+                return;
+            }
+
+            clearResults();
+            updateProgress(0, 'Testing Chinese OCR...');
+
+            const preprocessed = await preprocessImage(currentImage);
+            await testLanguage('chi_sim', 'Chinese Simplified', preprocessed);
+            
+            updateProgress(100, 'Chinese test complete!');
+        }
+
+        function generateRecommendations(results) {
+            const recs = [];
+            
+            const chineseResult = results.find(r => r.language === 'chi_sim');
+            if (chineseResult && !chineseResult.error) {
+                if (chineseResult.confidence < 30) {
+                    recs.push('• Image quality too low - try higher resolution or better lighting');
+                }
+                if (chineseResult.chineseChars === 0) {
+                    recs.push('• No Chinese characters detected - check if image contains Chinese text');
+                }
+                if (chineseResult.hasGibberish) {
+                    recs.push('• Gibberish detected - try different preprocessing or chi_tra instead');
+                }
+                if (chineseResult.confidence > 50) {
+                    recs.push('• Good results! Consider using chi_sim for production');
+                }
+            }
+            
+            recs.push('• Always use high-resolution, clear images');
+            recs.push('• Ensure good contrast between text and background');
+            recs.push('• Try both chi_sim and chi_tra for best results');
+            
+            return recs.join('\n');
+        }
+    </script>
+</body>
+</html>
