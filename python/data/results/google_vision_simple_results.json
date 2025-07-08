@@ -1,0 +1,98 @@
+{
+  "full_text": "This is a sample text extracted using Google Vision API. The quick brown fox jumps over the lazy dog.",
+  "words": [
+    {
+      "text": "This",
+      "bbox": {
+        "left": 10,
+        "top": 20,
+        "width": 30,
+        "height": 20
+      },
+      "vertices": [
+        [
+          10,
+          20
+        ],
+        [
+          40,
+          20
+        ],
+        [
+          40,
+          40
+        ],
+        [
+          10,
+          40
+        ]
+      ],
+      "confidence": 0.95
+    },
+    {
+      "text": "is",
+      "bbox": {
+        "left": 45,
+        "top": 20,
+        "width": 15,
+        "height": 20
+      },
+      "vertices": [
+        [
+          45,
+          20
+        ],
+        [
+          60,
+          20
+        ],
+        [
+          60,
+          40
+        ],
+        [
+          45,
+          40
+        ]
+      ],
+      "confidence": 0.97
+    },
+    {
+      "text": "sample",
+      "bbox": {
+        "left": 65,
+        "top": 20,
+        "width": 45,
+        "height": 20
+      },
+      "vertices": [
+        [
+          65,
+          20
+        ],
+        [
+          110,
+          20
+        ],
+        [
+          110,
+          40
+        ],
+        [
+          65,
+          40
+        ]
+      ],
+      "confidence": 0.96
+    }
+  ],
+  "word_count": 3,
+  "confidence_avg": 0.96,
+  "image_info": {
+    "width": 800,
+    "height": 600,
+    "mode": "RGB",
+    "format": "PNG"
+  },
+  "api_provider": "google_vision"
+}

@@ -1,0 +1,48 @@
+{
+  "source_file": "Screenshot 2025-07-07 at 4.53.59 PM.png",
+  "analysis_methods": [
+    {
+      "method": "Original",
+      "text": "Level 5 exemplar 3\nPart A\nLam wetting fo smpress tay sheng dijappairtinent of ber\nde gneenight stony oct Dele Room C last fatwa Twas attracted\n: by the advertisement af the Deluxe Room on your\nWebsite ond had high hopes that it would be the\nte _Colebvate other Day. Yet, the ream was the",
+      "word_count": 55
+    },
+    {
+      "method": "Grayscale",
+      "text": "Level 5 exemplar 3\nPart A\nLam wetting fo smprest tay sheng dijappairtinent of ber\nde gneenight stony oct Dele Room C last fatwa Twas attracted\n: by the advertsemeit af the Deluxe Room on your\nWebsite ond had high hopes ‘that it woutd be the\nte _Colebvate other Day. Yet, the ream was the",
+      "word_count": 55
+    },
+    {
+      "method": "Enhanced Contrast",
+      "text": "Level 5 exemplar 3\nPart A\n\nper Sic [ Mado\nLam waking “fo depres! my sheng dijappatatinent” efter\name sg a ant Re Ck bg Tas ate\n\" by the advertisement af the Deluxe Reom on your\nWebsite ond had high hopes ‘thet it wuld be the\nte _Colebvate other Day. Yet, the rear was the",
+      "word_count": 56
+    },
+    {
+      "method": "PSM 3",
+      "text": "Level 5 exemplar 3\n\nPart A",
+      "word_count": 6
+    },
+    {
+      "method": "PSM 4",
+      "text": "Level 5 exemplar 3\n\nPart A",
+      "word_count": 6
+    },
+    {
+      "method": "PSM 6",
+      "text": "Level 5 exemplar 3\nPart A\nLam wetting fo smpress tay sheng dijappairtinent of ber\nde gneenight stony oct Dele Room C last fatwa Twas attracted\n: by the advertisement af the Deluxe Room on your\nWebsite ond had high hopes that it would be the\nte _Colebvate other Day. Yet, the ream was the",
+      "word_count": 55
+    },
+    {
+      "method": "PSM 8",
+      "text": "=",
+      "word_count": 1
+    },
+    {
+      "method": "PSM 11",
+      "text": "Level 5 exemplar 3\n\nPart A\n\na A ae\n\nDear\n\nSir / Madam ,\n\nnities _— oa snnnneinenenieniinnnininnnsnannt nenaninnnianininninnnsiennnie\n\na Oe a, een\n\nLam wating “fo depress my Sheng dijappaistinent efter\n\non Anan,\n\ngne-wight stay at Deluxe Rom C last Suatuedony\n\nsetae fan mnnininnanrininniniiineininininninitin ttn\n\nL was attva ted\n\nbanner [ernment nnnnnnnntininnnennnnntneeinnniannne\n\nthe Deluxe Room on your\n\nwebsite ond had high hoped that it weld Le the\n\n4\n\nonan onmnnentnatelanreninnrietenerernenanrevnsteensnsiflnnenentnssstnsninunssietrantetanereee nee freee erenersnen\n\neclet lovakon fir me ond py) rane\n\n.\n\nae Aa ee\n\n2 yoor - ald mothe\n\nfo we\n\noA OO. Sel an teoecrnrnennntennninnnaf Goninon cnt iinet enn\n\nLvate Hothec dog Ae, the rem was the",
+      "word_count": 108
+    }
+  ],
+  "best_method": "PSM 11",
+  "best_text": "Level 5 exemplar 3\n\nPart A\n\na A ae\n\nDear\n\nSir / Madam ,\n\nnities _— oa snnnneinenenieniinnnininnnsnannt nenaninnnianininninnnsiennnie\n\na Oe a, een\n\nLam wating “fo depress my Sheng dijappaistinent efter\n\non Anan,\n\ngne-wight stay at Deluxe Rom C last Suatuedony\n\nsetae fan mnnininnanrininniniiineininininninitin ttn\n\nL was attva ted\n\nbanner [ernment nnnnnnnntininnnennnnntneeinnniannne\n\nthe Deluxe Room on your\n\nwebsite ond had high hoped that it weld Le the\n\n4\n\nonan onmnnentnatelanreninnrietenerernenanrevnsteensnsiflnnenentnssstnsninunssietrantetanereee nee freee erenersnen\n\neclet lovakon fir me ond py) rane\n\n.\n\nae Aa ee\n\n2 yoor - ald mothe\n\nfo we\n\noA OO. Sel an teoecrnrnennntennninnnaf Goninon cnt iinet enn\n\nLvate Hothec dog Ae, the rem was the",
+  "best_word_count": 108
+}

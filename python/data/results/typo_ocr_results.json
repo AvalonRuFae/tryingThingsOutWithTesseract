@@ -1,0 +1,864 @@
+{
+  "image_path": "data/input/composition_with_typos.png",
+  "image_dimensions": {
+    "width": 800,
+    "height": 600
+  },
+  "words": [
+    {
+      "text": "My;",
+      "confidence": 67,
+      "bbox": {
+        "x": 52,
+        "y": 35,
+        "x2": 73,
+        "y2": 52,
+        "width": 21,
+        "height": 17,
+        "center_x": 62,
+        "center_y": 43
+      }
+    },
+    {
+      "text": "Summer",
+      "confidence": 73,
+      "bbox": {
+        "x": 90,
+        "y": 35,
+        "x2": 179,
+        "y2": 52,
+        "width": 89,
+        "height": 17,
+        "center_x": 134,
+        "center_y": 43
+      }
+    },
+    {
+      "text": "Vacation",
+      "confidence": 96,
+      "bbox": {
+        "x": 186,
+        "y": 35,
+        "x2": 277,
+        "y2": 52,
+        "width": 91,
+        "height": 17,
+        "center_x": 231,
+        "center_y": 43
+      }
+    },
+    {
+      "text": "Last",
+      "confidence": 91,
+      "bbox": {
+        "x": 51,
+        "y": 84,
+        "x2": 78,
+        "y2": 97,
+        "width": 27,
+        "height": 13,
+        "center_x": 64,
+        "center_y": 90
+      }
+    },
+    {
+      "text": "sumer",
+      "confidence": 95,
+      "bbox": {
+        "x": 90,
+        "y": 87,
+        "x2": 139,
+        "y2": 97,
+        "width": 49,
+        "height": 10,
+        "center_x": 114,
+        "center_y": 92
+      }
+    },
+    {
+      "text": "|",
+      "confidence": 95,
+      "bbox": {
+        "x": 146,
+        "y": 84,
+        "x2": 147,
+        "y2": 97,
+        "width": 1,
+        "height": 13,
+        "center_x": 146,
+        "center_y": 90
+      }
+    },
+    {
+      "text": "went",
+      "confidence": 96,
+      "bbox": {
+        "x": 154,
+        "y": 84,
+        "x2": 192,
+        "y2": 97,
+        "width": 38,
+        "height": 13,
+        "center_x": 173,
+        "center_y": 90
+      }
+    },
+    {
+      "text": "to",
+      "confidence": 96,
+      "bbox": {
+        "x": 197,
+        "y": 84,
+        "x2": 211,
+        "y2": 97,
+        "width": 14,
+        "height": 13,
+        "center_x": 204,
+        "center_y": 90
+      }
+    },
+    {
+      "text": "the",
+      "confidence": 96,
+      "bbox": {
+        "x": 217,
+        "y": 84,
+        "x2": 241,
+        "y2": 97,
+        "width": 24,
+        "height": 13,
+        "center_x": 229,
+        "center_y": 90
+      }
+    },
+    {
+      "text": "beach",
+      "confidence": 96,
+      "bbox": {
+        "x": 248,
+        "y": 84,
+        "x2": 295,
+        "y2": 97,
+        "width": 47,
+        "height": 13,
+        "center_x": 271,
+        "center_y": 90
+      }
+    },
+    {
+      "text": "with",
+      "confidence": 96,
+      "bbox": {
+        "x": 301,
+        "y": 84,
+        "x2": 332,
+        "y2": 97,
+        "width": 31,
+        "height": 13,
+        "center_x": 316,
+        "center_y": 90
+      }
+    },
+    {
+      "text": "my",
+      "confidence": 96,
+      "bbox": {
+        "x": 339,
+        "y": 87,
+        "x2": 362,
+        "y2": 100,
+        "width": 23,
+        "height": 13,
+        "center_x": 350,
+        "center_y": 93
+      }
+    },
+    {
+      "text": "familly.",
+      "confidence": 96,
+      "bbox": {
+        "x": 367,
+        "y": 84,
+        "x2": 422,
+        "y2": 100,
+        "width": 55,
+        "height": 16,
+        "center_x": 394,
+        "center_y": 92
+      }
+    },
+    {
+      "text": "at",
+      "confidence": 91,
+      "bbox": {
+        "x": 141,
+        "y": 119,
+        "x2": 155,
+        "y2": 132,
+        "width": 14,
+        "height": 13,
+        "center_x": 148,
+        "center_y": 125
+      }
+    },
+    {
+      "text": "a",
+      "confidence": 91,
+      "bbox": {
+        "x": 161,
+        "y": 122,
+        "x2": 169,
+        "y2": 132,
+        "width": 8,
+        "height": 10,
+        "center_x": 165,
+        "center_y": 127
+      }
+    },
+    {
+      "text": "hotel",
+      "confidence": 94,
+      "bbox": {
+        "x": 176,
+        "y": 119,
+        "x2": 213,
+        "y2": 132,
+        "width": 37,
+        "height": 13,
+        "center_x": 194,
+        "center_y": 125
+      }
+    },
+    {
+      "text": "wich",
+      "confidence": 96,
+      "bbox": {
+        "x": 219,
+        "y": 119,
+        "x2": 254,
+        "y2": 132,
+        "width": 35,
+        "height": 13,
+        "center_x": 236,
+        "center_y": 125
+      }
+    },
+    {
+      "text": "was",
+      "confidence": 96,
+      "bbox": {
+        "x": 260,
+        "y": 122,
+        "x2": 291,
+        "y2": 132,
+        "width": 31,
+        "height": 10,
+        "center_x": 275,
+        "center_y": 127
+      }
+    },
+    {
+      "text": "very",
+      "confidence": 96,
+      "bbox": {
+        "x": 297,
+        "y": 122,
+        "x2": 331,
+        "y2": 136,
+        "width": 34,
+        "height": 14,
+        "center_x": 314,
+        "center_y": 129
+      }
+    },
+    {
+      "text": "nice.",
+      "confidence": 91,
+      "bbox": {
+        "x": 337,
+        "y": 119,
+        "x2": 368,
+        "y2": 132,
+        "width": 31,
+        "height": 13,
+        "center_x": 352,
+        "center_y": 125
+      }
+    },
+    {
+      "text": "The",
+      "confidence": 93,
+      "bbox": {
+        "x": 50,
+        "y": 154,
+        "x2": 70,
+        "y2": 167,
+        "width": 20,
+        "height": 13,
+        "center_x": 60,
+        "center_y": 160
+      }
+    },
+    {
+      "text": "whether",
+      "confidence": 94,
+      "bbox": {
+        "x": 86,
+        "y": 154,
+        "x2": 150,
+        "y2": 167,
+        "width": 64,
+        "height": 13,
+        "center_x": 118,
+        "center_y": 160
+      }
+    },
+    {
+      "text": "was",
+      "confidence": 96,
+      "bbox": {
+        "x": 155,
+        "y": 157,
+        "x2": 186,
+        "y2": 167,
+        "width": 31,
+        "height": 10,
+        "center_x": 170,
+        "center_y": 162
+      }
+    },
+    {
+      "text": "perfect",
+      "confidence": 96,
+      "bbox": {
+        "x": 193,
+        "y": 154,
+        "x2": 247,
+        "y2": 171,
+        "width": 54,
+        "height": 17,
+        "center_x": 220,
+        "center_y": 162
+      }
+    },
+    {
+      "text": "and",
+      "confidence": 96,
+      "bbox": {
+        "x": 253,
+        "y": 154,
+        "x2": 281,
+        "y2": 167,
+        "width": 28,
+        "height": 13,
+        "center_x": 267,
+        "center_y": 160
+      }
+    },
+    {
+      "text": "the",
+      "confidence": 96,
+      "bbox": {
+        "x": 287,
+        "y": 154,
+        "x2": 311,
+        "y2": 167,
+        "width": 24,
+        "height": 13,
+        "center_x": 299,
+        "center_y": 160
+      }
+    },
+    {
+      "text": "ocean",
+      "confidence": 96,
+      "bbox": {
+        "x": 318,
+        "y": 157,
+        "x2": 365,
+        "y2": 167,
+        "width": 47,
+        "height": 10,
+        "center_x": 341,
+        "center_y": 162
+      }
+    },
+    {
+      "text": "was",
+      "confidence": 96,
+      "bbox": {
+        "x": 371,
+        "y": 157,
+        "x2": 402,
+        "y2": 167,
+        "width": 31,
+        "height": 10,
+        "center_x": 386,
+        "center_y": 162
+      }
+    },
+    {
+      "text": "beutiful.",
+      "confidence": 94,
+      "bbox": {
+        "x": 409,
+        "y": 154,
+        "x2": 470,
+        "y2": 167,
+        "width": 61,
+        "height": 13,
+        "center_x": 439,
+        "center_y": 160
+      }
+    },
+    {
+      "text": "|",
+      "confidence": 62,
+      "bbox": {
+        "x": 52,
+        "y": 191,
+        "x2": 53,
+        "y2": 202,
+        "width": 1,
+        "height": 11,
+        "center_x": 52,
+        "center_y": 196
+      }
+    },
+    {
+      "text": "enjoied",
+      "confidence": 92,
+      "bbox": {
+        "x": 61,
+        "y": 191,
+        "x2": 117,
+        "y2": 202,
+        "width": 56,
+        "height": 11,
+        "center_x": 89,
+        "center_y": 196
+      }
+    },
+    {
+      "text": "swiming",
+      "confidence": 92,
+      "bbox": {
+        "x": 124,
+        "y": 192,
+        "x2": 187,
+        "y2": 206,
+        "width": 63,
+        "height": 14,
+        "center_x": 155,
+        "center_y": 199
+      }
+    },
+    {
+      "text": "in",
+      "confidence": 96,
+      "bbox": {
+        "x": 194,
+        "y": 192,
+        "x2": 206,
+        "y2": 202,
+        "width": 12,
+        "height": 10,
+        "center_x": 200,
+        "center_y": 197
+      }
+    },
+    {
+      "text": "the",
+      "confidence": 96,
+      "bbox": {
+        "x": 212,
+        "y": 191,
+        "x2": 236,
+        "y2": 202,
+        "width": 24,
+        "height": 11,
+        "center_x": 224,
+        "center_y": 196
+      }
+    },
+    {
+      "text": "waves",
+      "confidence": 96,
+      "bbox": {
+        "x": 242,
+        "y": 192,
+        "x2": 292,
+        "y2": 202,
+        "width": 50,
+        "height": 10,
+        "center_x": 267,
+        "center_y": 197
+      }
+    },
+    {
+      "text": "every",
+      "confidence": 96,
+      "bbox": {
+        "x": 299,
+        "y": 192,
+        "x2": 342,
+        "y2": 206,
+        "width": 43,
+        "height": 14,
+        "center_x": 320,
+        "center_y": 199
+      }
+    },
+    {
+      "text": "day.",
+      "confidence": 96,
+      "bbox": {
+        "x": 348,
+        "y": 191,
+        "x2": 380,
+        "y2": 206,
+        "width": 32,
+        "height": 15,
+        "center_x": 364,
+        "center_y": 198
+      }
+    },
+    {
+      "text": "My",
+      "confidence": 93,
+      "bbox": {
+        "x": 51,
+        "y": 224,
+        "x2": 74,
+        "y2": 241,
+        "width": 23,
+        "height": 17,
+        "center_x": 62,
+        "center_y": 232
+      }
+    },
+    {
+      "text": "favrite",
+      "confidence": 92,
+      "bbox": {
+        "x": 85,
+        "y": 224,
+        "x2": 127,
+        "y2": 237,
+        "width": 42,
+        "height": 13,
+        "center_x": 106,
+        "center_y": 230
+      }
+    },
+    {
+      "text": "activity",
+      "confidence": 96,
+      "bbox": {
+        "x": 134,
+        "y": 224,
+        "x2": 188,
+        "y2": 241,
+        "width": 54,
+        "height": 17,
+        "center_x": 161,
+        "center_y": 232
+      }
+    },
+    {
+      "text": "was",
+      "confidence": 93,
+      "bbox": {
+        "x": 193,
+        "y": 227,
+        "x2": 224,
+        "y2": 237,
+        "width": 31,
+        "height": 10,
+        "center_x": 208,
+        "center_y": 232
+      }
+    },
+    {
+      "text": "bulding",
+      "confidence": 92,
+      "bbox": {
+        "x": 231,
+        "y": 224,
+        "x2": 287,
+        "y2": 241,
+        "width": 56,
+        "height": 17,
+        "center_x": 259,
+        "center_y": 232
+      }
+    },
+    {
+      "text": "sand",
+      "confidence": 96,
+      "bbox": {
+        "x": 294,
+        "y": 224,
+        "x2": 331,
+        "y2": 237,
+        "width": 37,
+        "height": 13,
+        "center_x": 312,
+        "center_y": 230
+      }
+    },
+    {
+      "text": "castles.",
+      "confidence": 95,
+      "bbox": {
+        "x": 338,
+        "y": 224,
+        "x2": 397,
+        "y2": 237,
+        "width": 59,
+        "height": 13,
+        "center_x": 367,
+        "center_y": 230
+      }
+    },
+    {
+      "text": "Welalso",
+      "confidence": 90,
+      "bbox": {
+        "x": 50,
+        "y": 259,
+        "x2": 114,
+        "y2": 272,
+        "width": 64,
+        "height": 13,
+        "center_x": 82,
+        "center_y": 265
+      }
+    },
+    {
+      "text": "went",
+      "confidence": 96,
+      "bbox": {
+        "x": 120,
+        "y": 259,
+        "x2": 158,
+        "y2": 272,
+        "width": 38,
+        "height": 13,
+        "center_x": 139,
+        "center_y": 265
+      }
+    },
+    {
+      "text": "to",
+      "confidence": 96,
+      "bbox": {
+        "x": 163,
+        "y": 259,
+        "x2": 177,
+        "y2": 272,
+        "width": 14,
+        "height": 13,
+        "center_x": 170,
+        "center_y": 265
+      }
+    },
+    {
+      "text": "a",
+      "confidence": 96,
+      "bbox": {
+        "x": 184,
+        "y": 262,
+        "x2": 192,
+        "y2": 272,
+        "width": 8,
+        "height": 10,
+        "center_x": 188,
+        "center_y": 267
+      }
+    },
+    {
+      "text": "resturant",
+      "confidence": 96,
+      "bbox": {
+        "x": 199,
+        "y": 259,
+        "x2": 269,
+        "y2": 272,
+        "width": 70,
+        "height": 13,
+        "center_x": 234,
+        "center_y": 265
+      }
+    },
+    {
+      "text": "that",
+      "confidence": 96,
+      "bbox": {
+        "x": 274,
+        "y": 259,
+        "x2": 304,
+        "y2": 272,
+        "width": 30,
+        "height": 13,
+        "center_x": 289,
+        "center_y": 265
+      }
+    },
+    {
+      "text": "served",
+      "confidence": 93,
+      "bbox": {
+        "x": 310,
+        "y": 259,
+        "x2": 362,
+        "y2": 272,
+        "width": 52,
+        "height": 13,
+        "center_x": 336,
+        "center_y": 265
+      }
+    },
+    {
+      "text": "delisious",
+      "confidence": 93,
+      "bbox": {
+        "x": 369,
+        "y": 259,
+        "x2": 437,
+        "y2": 272,
+        "width": 68,
+        "height": 13,
+        "center_x": 403,
+        "center_y": 265
+      }
+    },
+    {
+      "text": "sea|food.",
+      "confidence": 55,
+      "bbox": {
+        "x": 51,
+        "y": 294,
+        "x2": 123,
+        "y2": 307,
+        "width": 72,
+        "height": 13,
+        "center_x": 87,
+        "center_y": 300
+      }
+    },
+    {
+      "text": "|",
+      "confidence": 96,
+      "bbox": {
+        "x": 131,
+        "y": 294,
+        "x2": 132,
+        "y2": 307,
+        "width": 1,
+        "height": 13,
+        "center_x": 131,
+        "center_y": 300
+      }
+    },
+    {
+      "text": "cant",
+      "confidence": 96,
+      "bbox": {
+        "x": 140,
+        "y": 294,
+        "x2": 173,
+        "y2": 307,
+        "width": 33,
+        "height": 13,
+        "center_x": 156,
+        "center_y": 300
+      }
+    },
+    {
+      "text": "wait",
+      "confidence": 96,
+      "bbox": {
+        "x": 178,
+        "y": 294,
+        "x2": 210,
+        "y2": 307,
+        "width": 32,
+        "height": 13,
+        "center_x": 194,
+        "center_y": 300
+      }
+    },
+    {
+      "text": "to",
+      "confidence": 94,
+      "bbox": {
+        "x": 215,
+        "y": 294,
+        "x2": 229,
+        "y2": 307,
+        "width": 14,
+        "height": 13,
+        "center_x": 222,
+        "center_y": 300
+      }
+    },
+    {
+      "text": "go",
+      "confidence": 94,
+      "bbox": {
+        "x": 236,
+        "y": 297,
+        "x2": 254,
+        "y2": 310,
+        "width": 18,
+        "height": 13,
+        "center_x": 245,
+        "center_y": 303
+      }
+    },
+    {
+      "text": "back",
+      "confidence": 96,
+      "bbox": {
+        "x": 261,
+        "y": 294,
+        "x2": 298,
+        "y2": 307,
+        "width": 37,
+        "height": 13,
+        "center_x": 279,
+        "center_y": 300
+      }
+    },
+    {
+      "text": "next",
+      "confidence": 96,
+      "bbox": {
+        "x": 304,
+        "y": 294,
+        "x2": 337,
+        "y2": 307,
+        "width": 33,
+        "height": 13,
+        "center_x": 320,
+        "center_y": 300
+      }
+    },
+    {
+      "text": "year!",
+      "confidence": 95,
+      "bbox": {
+        "x": 342,
+        "y": 294,
+        "x2": 381,
+        "y2": 310,
+        "width": 39,
+        "height": 16,
+        "center_x": 361,
+        "center_y": 302
+      }
+    }
+  ],
+  "total_words": 61
+}
