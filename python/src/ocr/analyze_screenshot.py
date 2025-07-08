@@ -198,7 +198,19 @@ class ScreenshotAnalyzer:
 
 def main():
     """Main analysis function"""
-    screenshot_file = [f for f in os.listdir('.') if f.startswith('Screenshot')][0]
+    # Look for screenshot file in data/input directory
+    input_dir = 'data/input'
+    screenshot_files = [f for f in os.listdir(input_dir) if f.startswith('screenshot')]
+    
+    if not screenshot_files:
+        print(f"❌ No screenshot files found in {input_dir}/")
+        print("Available files:")
+        for f in os.listdir(input_dir):
+            print(f"   • {f}")
+        return
+    
+    screenshot_file = os.path.join(input_dir, screenshot_files[0])
+    print(f"📁 Found screenshot: {screenshot_file}")
     
     print("🔍 Screenshot Enhanced Analysis")
     print("=" * 50)
