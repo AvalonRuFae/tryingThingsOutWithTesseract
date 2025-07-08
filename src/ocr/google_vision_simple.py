@@ -217,9 +217,9 @@ def main():
     print("=" * 50)
     
     # File paths
-    input_image = "/Users/terakomari/student composition corrector/data/input/screenshot_sample.png"
-    output_json = "/Users/terakomari/student composition corrector/data/results/google_vision_simple_results.json"
-    output_viz = "/Users/terakomari/student composition corrector/data/output/google_vision_simple_visualization.png"
+    input_image = "data/input/screenshot_sample.png"
+    output_json = "data/results/google_vision_simple_results.json"
+    output_viz = "data/output/google_vision_simple_visualization.png"
     
     # Check input file
     if not os.path.exists(input_image):

@@ -14,7 +14,7 @@ def analyze_detected_content():
     print("=" * 60)
     
     # Load enhanced results
-    with open('screenshot_enhanced_results.json', 'r') as f:
+    with open('data/results/screenshot_enhanced_results.json', 'r') as f:
         results = json.load(f)
     
     best_text = results['best_text']

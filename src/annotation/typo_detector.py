@@ -232,16 +232,16 @@ def main():
     
     try:
         # Process the composition with typos
-        image_path = 'composition_with_typos.png'
+        image_path = 'data/input/composition_with_typos.png'
         print(f"📸 Processing: {image_path}")
         
         # Extract text with coordinates
         ocr_results = detector.extract_text_with_coordinates(image_path)
         
         # Save OCR results
-        with open('typo_ocr_results.json', 'w') as f:
+        with open('data/results/typo_ocr_results.json', 'w') as f:
             json.dump(ocr_results, f, indent=2)
-        print("💾 OCR results saved to: typo_ocr_results.json")
+        print("💾 OCR results saved to: data/results/typo_ocr_results.json")
         
         # Detect typos
         print("🔍 Detecting typos...")
@@ -263,7 +263,7 @@ def main():
             annotated_img = detector.draw_typo_annotation(annotated_img, typo)
         
         # Save annotated image
-        output_path = 'annotated_typos.png'
+        output_path = 'data/output/annotated_typos.png'
         cv2.imwrite(output_path, annotated_img)
         print(f"✅ Annotated image saved to: {output_path}")
         

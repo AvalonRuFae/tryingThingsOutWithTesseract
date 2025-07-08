@@ -1,0 +1,1400 @@
+{
+  "words": [
+    {
+      "text": "My",
+      "confidence": 96,
+      "bbox": {
+        "x": 52,
+        "y": 55,
+        "width": 30,
+        "height": 22,
+        "x2": 82,
+        "y2": 77,
+        "center_x": 67,
+        "center_y": 66
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 1,
+      "line_num": 1,
+      "word_num": 1
+    },
+    {
+      "text": "Summer",
+      "confidence": 96,
+      "bbox": {
+        "x": 90,
+        "y": 55,
+        "width": 89,
+        "height": 17,
+        "x2": 179,
+        "y2": 72,
+        "center_x": 134,
+        "center_y": 63
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 1,
+      "line_num": 1,
+      "word_num": 2
+    },
+    {
+      "text": "Vacation",
+      "confidence": 96,
+      "bbox": {
+        "x": 186,
+        "y": 55,
+        "width": 91,
+        "height": 17,
+        "x2": 277,
+        "y2": 72,
+        "center_x": 231,
+        "center_y": 63
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 1,
+      "line_num": 1,
+      "word_num": 3
+    },
+    {
+      "text": "This",
+      "confidence": 96,
+      "bbox": {
+        "x": 50,
+        "y": 114,
+        "width": 33,
+        "height": 13,
+        "x2": 83,
+        "y2": 127,
+        "center_x": 66,
+        "center_y": 120
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 2,
+      "line_num": 1,
+      "word_num": 1
+    },
+    {
+      "text": "summer",
+      "confidence": 96,
+      "bbox": {
+        "x": 90,
+        "y": 117,
+        "width": 64,
+        "height": 10,
+        "x2": 154,
+        "y2": 127,
+        "center_x": 122,
+        "center_y": 122
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 2,
+      "line_num": 1,
+      "word_num": 2
+    },
+    {
+      "text": "|",
+      "confidence": 95,
+      "bbox": {
+        "x": 161,
+        "y": 114,
+        "width": 1,
+        "height": 13,
+        "x2": 162,
+        "y2": 127,
+        "center_x": 161,
+        "center_y": 120
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 2,
+      "line_num": 1,
+      "word_num": 3
+    },
+    {
+      "text": "went",
+      "confidence": 96,
+      "bbox": {
+        "x": 169,
+        "y": 114,
+        "width": 38,
+        "height": 13,
+        "x2": 207,
+        "y2": 127,
+        "center_x": 188,
+        "center_y": 120
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 2,
+      "line_num": 1,
+      "word_num": 4
+    },
+    {
+      "text": "to",
+      "confidence": 96,
+      "bbox": {
+        "x": 212,
+        "y": 114,
+        "width": 14,
+        "height": 13,
+        "x2": 226,
+        "y2": 127,
+        "center_x": 219,
+        "center_y": 120
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 2,
+      "line_num": 1,
+      "word_num": 5
+    },
+    {
+      "text": "the",
+      "confidence": 96,
+      "bbox": {
+        "x": 232,
+        "y": 114,
+        "width": 24,
+        "height": 13,
+        "x2": 256,
+        "y2": 127,
+        "center_x": 244,
+        "center_y": 120
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 2,
+      "line_num": 1,
+      "word_num": 6
+    },
+    {
+      "text": "beach",
+      "confidence": 96,
+      "bbox": {
+        "x": 263,
+        "y": 114,
+        "width": 47,
+        "height": 13,
+        "x2": 310,
+        "y2": 127,
+        "center_x": 286,
+        "center_y": 120
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 2,
+      "line_num": 1,
+      "word_num": 7
+    },
+    {
+      "text": "with",
+      "confidence": 96,
+      "bbox": {
+        "x": 316,
+        "y": 114,
+        "width": 31,
+        "height": 13,
+        "x2": 347,
+        "y2": 127,
+        "center_x": 331,
+        "center_y": 120
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 2,
+      "line_num": 1,
+      "word_num": 8
+    },
+    {
+      "text": "my",
+      "confidence": 97,
+      "bbox": {
+        "x": 354,
+        "y": 117,
+        "width": 23,
+        "height": 14,
+        "x2": 377,
+        "y2": 131,
+        "center_x": 365,
+        "center_y": 124
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 2,
+      "line_num": 1,
+      "word_num": 9
+    },
+    {
+      "text": "family.",
+      "confidence": 96,
+      "bbox": {
+        "x": 382,
+        "y": 114,
+        "width": 51,
+        "height": 17,
+        "x2": 433,
+        "y2": 131,
+        "center_x": 407,
+        "center_y": 122
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 2,
+      "line_num": 1,
+      "word_num": 10
+    },
+    {
+      "text": "We",
+      "confidence": 94,
+      "bbox": {
+        "x": 50,
+        "y": 144,
+        "width": 26,
+        "height": 13,
+        "x2": 76,
+        "y2": 157,
+        "center_x": 63,
+        "center_y": 150
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 3,
+      "line_num": 1,
+      "word_num": 1
+    },
+    {
+      "text": "had",
+      "confidence": 94,
+      "bbox": {
+        "x": 83,
+        "y": 144,
+        "width": 28,
+        "height": 13,
+        "x2": 111,
+        "y2": 157,
+        "center_x": 97,
+        "center_y": 150
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 3,
+      "line_num": 1,
+      "word_num": 2
+    },
+    {
+      "text": "so",
+      "confidence": 96,
+      "bbox": {
+        "x": 118,
+        "y": 147,
+        "width": 17,
+        "height": 10,
+        "x2": 135,
+        "y2": 157,
+        "center_x": 126,
+        "center_y": 152
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 3,
+      "line_num": 1,
+      "word_num": 3
+    },
+    {
+      "text": "much",
+      "confidence": 96,
+      "bbox": {
+        "x": 142,
+        "y": 144,
+        "width": 42,
+        "height": 13,
+        "x2": 184,
+        "y2": 157,
+        "center_x": 163,
+        "center_y": 150
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 3,
+      "line_num": 1,
+      "word_num": 4
+    },
+    {
+      "text": "fun",
+      "confidence": 96,
+      "bbox": {
+        "x": 190,
+        "y": 144,
+        "width": 24,
+        "height": 13,
+        "x2": 214,
+        "y2": 157,
+        "center_x": 202,
+        "center_y": 150
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 3,
+      "line_num": 1,
+      "word_num": 5
+    },
+    {
+      "text": "playing",
+      "confidence": 96,
+      "bbox": {
+        "x": 221,
+        "y": 144,
+        "width": 55,
+        "height": 17,
+        "x2": 276,
+        "y2": 161,
+        "center_x": 248,
+        "center_y": 152
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 3,
+      "line_num": 1,
+      "word_num": 6
+    },
+    {
+      "text": "in",
+      "confidence": 96,
+      "bbox": {
+        "x": 283,
+        "y": 144,
+        "width": 12,
+        "height": 13,
+        "x2": 295,
+        "y2": 157,
+        "center_x": 289,
+        "center_y": 150
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 3,
+      "line_num": 1,
+      "word_num": 7
+    },
+    {
+      "text": "the",
+      "confidence": 96,
+      "bbox": {
+        "x": 301,
+        "y": 144,
+        "width": 24,
+        "height": 13,
+        "x2": 325,
+        "y2": 157,
+        "center_x": 313,
+        "center_y": 150
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 3,
+      "line_num": 1,
+      "word_num": 8
+    },
+    {
+      "text": "sand",
+      "confidence": 96,
+      "bbox": {
+        "x": 332,
+        "y": 144,
+        "width": 37,
+        "height": 13,
+        "x2": 369,
+        "y2": 157,
+        "center_x": 350,
+        "center_y": 150
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 3,
+      "line_num": 1,
+      "word_num": 9
+    },
+    {
+      "text": "and",
+      "confidence": 96,
+      "bbox": {
+        "x": 376,
+        "y": 144,
+        "width": 28,
+        "height": 13,
+        "x2": 404,
+        "y2": 157,
+        "center_x": 390,
+        "center_y": 150
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 3,
+      "line_num": 1,
+      "word_num": 10
+    },
+    {
+      "text": "swimming.",
+      "confidence": 96,
+      "bbox": {
+        "x": 411,
+        "y": 144,
+        "width": 83,
+        "height": 17,
+        "x2": 494,
+        "y2": 161,
+        "center_x": 452,
+        "center_y": 152
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 3,
+      "line_num": 1,
+      "word_num": 11
+    },
+    {
+      "text": "|",
+      "confidence": 92,
+      "bbox": {
+        "x": 52,
+        "y": 174,
+        "width": 1,
+        "height": 13,
+        "x2": 53,
+        "y2": 187,
+        "center_x": 52,
+        "center_y": 180
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 3,
+      "line_num": 2,
+      "word_num": 1
+    },
+    {
+      "text": "built",
+      "confidence": 95,
+      "bbox": {
+        "x": 61,
+        "y": 174,
+        "width": 32,
+        "height": 13,
+        "x2": 93,
+        "y2": 187,
+        "center_x": 77,
+        "center_y": 180
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 3,
+      "line_num": 2,
+      "word_num": 2
+    },
+    {
+      "text": "a",
+      "confidence": 95,
+      "bbox": {
+        "x": 99,
+        "y": 177,
+        "width": 8,
+        "height": 10,
+        "x2": 107,
+        "y2": 187,
+        "center_x": 103,
+        "center_y": 182
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 3,
+      "line_num": 2,
+      "word_num": 3
+    },
+    {
+      "text": "huge",
+      "confidence": 96,
+      "bbox": {
+        "x": 114,
+        "y": 174,
+        "width": 38,
+        "height": 17,
+        "x2": 152,
+        "y2": 191,
+        "center_x": 133,
+        "center_y": 182
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 3,
+      "line_num": 2,
+      "word_num": 4
+    },
+    {
+      "text": "sand",
+      "confidence": 96,
+      "bbox": {
+        "x": 159,
+        "y": 174,
+        "width": 37,
+        "height": 13,
+        "x2": 196,
+        "y2": 187,
+        "center_x": 177,
+        "center_y": 180
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 3,
+      "line_num": 2,
+      "word_num": 5
+    },
+    {
+      "text": "castle",
+      "confidence": 96,
+      "bbox": {
+        "x": 203,
+        "y": 174,
+        "width": 45,
+        "height": 13,
+        "x2": 248,
+        "y2": 187,
+        "center_x": 225,
+        "center_y": 180
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 3,
+      "line_num": 2,
+      "word_num": 6
+    },
+    {
+      "text": "that",
+      "confidence": 96,
+      "bbox": {
+        "x": 254,
+        "y": 174,
+        "width": 30,
+        "height": 13,
+        "x2": 284,
+        "y2": 187,
+        "center_x": 269,
+        "center_y": 180
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 3,
+      "line_num": 2,
+      "word_num": 7
+    },
+    {
+      "text": "looked",
+      "confidence": 96,
+      "bbox": {
+        "x": 290,
+        "y": 174,
+        "width": 51,
+        "height": 13,
+        "x2": 341,
+        "y2": 187,
+        "center_x": 315,
+        "center_y": 180
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 3,
+      "line_num": 2,
+      "word_num": 8
+    },
+    {
+      "text": "like",
+      "confidence": 96,
+      "bbox": {
+        "x": 348,
+        "y": 174,
+        "width": 25,
+        "height": 13,
+        "x2": 373,
+        "y2": 187,
+        "center_x": 360,
+        "center_y": 180
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 3,
+      "line_num": 2,
+      "word_num": 9
+    },
+    {
+      "text": "a",
+      "confidence": 96,
+      "bbox": {
+        "x": 380,
+        "y": 177,
+        "width": 8,
+        "height": 10,
+        "x2": 388,
+        "y2": 187,
+        "center_x": 384,
+        "center_y": 182
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 3,
+      "line_num": 2,
+      "word_num": 10
+    },
+    {
+      "text": "real",
+      "confidence": 96,
+      "bbox": {
+        "x": 395,
+        "y": 174,
+        "width": 28,
+        "height": 13,
+        "x2": 423,
+        "y2": 187,
+        "center_x": 409,
+        "center_y": 180
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 3,
+      "line_num": 2,
+      "word_num": 11
+    },
+    {
+      "text": "castle!",
+      "confidence": 96,
+      "bbox": {
+        "x": 430,
+        "y": 174,
+        "width": 50,
+        "height": 13,
+        "x2": 480,
+        "y2": 187,
+        "center_x": 455,
+        "center_y": 180
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 3,
+      "line_num": 2,
+      "word_num": 12
+    },
+    {
+      "text": "My",
+      "confidence": 96,
+      "bbox": {
+        "x": 51,
+        "y": 204,
+        "width": 23,
+        "height": 17,
+        "x2": 74,
+        "y2": 221,
+        "center_x": 62,
+        "center_y": 212
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 3,
+      "line_num": 3,
+      "word_num": 1
+    },
+    {
+      "text": "little",
+      "confidence": 93,
+      "bbox": {
+        "x": 80,
+        "y": 204,
+        "width": 30,
+        "height": 13,
+        "x2": 110,
+        "y2": 217,
+        "center_x": 95,
+        "center_y": 210
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 3,
+      "line_num": 3,
+      "word_num": 2
+    },
+    {
+      "text": "sister",
+      "confidence": 95,
+      "bbox": {
+        "x": 117,
+        "y": 204,
+        "width": 42,
+        "height": 13,
+        "x2": 159,
+        "y2": 217,
+        "center_x": 138,
+        "center_y": 210
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 3,
+      "line_num": 3,
+      "word_num": 3
+    },
+    {
+      "text": "helped",
+      "confidence": 96,
+      "bbox": {
+        "x": 165,
+        "y": 204,
+        "width": 52,
+        "height": 17,
+        "x2": 217,
+        "y2": 221,
+        "center_x": 191,
+        "center_y": 212
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 3,
+      "line_num": 3,
+      "word_num": 4
+    },
+    {
+      "text": "me",
+      "confidence": 96,
+      "bbox": {
+        "x": 224,
+        "y": 207,
+        "width": 23,
+        "height": 10,
+        "x2": 247,
+        "y2": 217,
+        "center_x": 235,
+        "center_y": 212
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 3,
+      "line_num": 3,
+      "word_num": 5
+    },
+    {
+      "text": "collect",
+      "confidence": 96,
+      "bbox": {
+        "x": 254,
+        "y": 204,
+        "width": 50,
+        "height": 13,
+        "x2": 304,
+        "y2": 217,
+        "center_x": 279,
+        "center_y": 210
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 3,
+      "line_num": 3,
+      "word_num": 6
+    },
+    {
+      "text": "seashells.",
+      "confidence": 96,
+      "bbox": {
+        "x": 310,
+        "y": 204,
+        "width": 78,
+        "height": 13,
+        "x2": 388,
+        "y2": 217,
+        "center_x": 349,
+        "center_y": 210
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 3,
+      "line_num": 3,
+      "word_num": 7
+    },
+    {
+      "text": "The",
+      "confidence": 95,
+      "bbox": {
+        "x": 50,
+        "y": 234,
+        "width": 30,
+        "height": 13,
+        "x2": 80,
+        "y2": 247,
+        "center_x": 65,
+        "center_y": 240
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 4,
+      "line_num": 1,
+      "word_num": 1
+    },
+    {
+      "text": "best",
+      "confidence": 96,
+      "bbox": {
+        "x": 87,
+        "y": 234,
+        "width": 33,
+        "height": 13,
+        "x2": 120,
+        "y2": 247,
+        "center_x": 103,
+        "center_y": 240
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 4,
+      "line_num": 1,
+      "word_num": 2
+    },
+    {
+      "text": "part",
+      "confidence": 96,
+      "bbox": {
+        "x": 126,
+        "y": 234,
+        "width": 30,
+        "height": 17,
+        "x2": 156,
+        "y2": 251,
+        "center_x": 141,
+        "center_y": 242
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 4,
+      "line_num": 1,
+      "word_num": 3
+    },
+    {
+      "text": "was",
+      "confidence": 96,
+      "bbox": {
+        "x": 161,
+        "y": 237,
+        "width": 31,
+        "height": 10,
+        "x2": 192,
+        "y2": 247,
+        "center_x": 176,
+        "center_y": 242
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 4,
+      "line_num": 1,
+      "word_num": 4
+    },
+    {
+      "text": "watching",
+      "confidence": 96,
+      "bbox": {
+        "x": 198,
+        "y": 234,
+        "width": 70,
+        "height": 17,
+        "x2": 268,
+        "y2": 251,
+        "center_x": 233,
+        "center_y": 242
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 4,
+      "line_num": 1,
+      "word_num": 5
+    },
+    {
+      "text": "the",
+      "confidence": 97,
+      "bbox": {
+        "x": 274,
+        "y": 234,
+        "width": 24,
+        "height": 13,
+        "x2": 298,
+        "y2": 247,
+        "center_x": 286,
+        "center_y": 240
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 4,
+      "line_num": 1,
+      "word_num": 6
+    },
+    {
+      "text": "sunset",
+      "confidence": 96,
+      "bbox": {
+        "x": 305,
+        "y": 234,
+        "width": 52,
+        "height": 13,
+        "x2": 357,
+        "y2": 247,
+        "center_x": 331,
+        "center_y": 240
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 4,
+      "line_num": 1,
+      "word_num": 7
+    },
+    {
+      "text": "over",
+      "confidence": 96,
+      "bbox": {
+        "x": 363,
+        "y": 237,
+        "width": 34,
+        "height": 10,
+        "x2": 397,
+        "y2": 247,
+        "center_x": 380,
+        "center_y": 242
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 4,
+      "line_num": 1,
+      "word_num": 8
+    },
+    {
+      "text": "the",
+      "confidence": 96,
+      "bbox": {
+        "x": 402,
+        "y": 234,
+        "width": 24,
+        "height": 13,
+        "x2": 426,
+        "y2": 247,
+        "center_x": 414,
+        "center_y": 240
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 4,
+      "line_num": 1,
+      "word_num": 9
+    },
+    {
+      "text": "ocean.",
+      "confidence": 96,
+      "bbox": {
+        "x": 433,
+        "y": 237,
+        "width": 52,
+        "height": 10,
+        "x2": 485,
+        "y2": 247,
+        "center_x": 459,
+        "center_y": 242
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 4,
+      "line_num": 1,
+      "word_num": 10
+    },
+    {
+      "text": "It",
+      "confidence": 92,
+      "bbox": {
+        "x": 52,
+        "y": 264,
+        "width": 8,
+        "height": 13,
+        "x2": 60,
+        "y2": 277,
+        "center_x": 56,
+        "center_y": 270
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 4,
+      "line_num": 2,
+      "word_num": 1
+    },
+    {
+      "text": "was",
+      "confidence": 96,
+      "bbox": {
+        "x": 65,
+        "y": 267,
+        "width": 31,
+        "height": 10,
+        "x2": 96,
+        "y2": 277,
+        "center_x": 80,
+        "center_y": 272
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 4,
+      "line_num": 2,
+      "word_num": 2
+    },
+    {
+      "text": "the",
+      "confidence": 96,
+      "bbox": {
+        "x": 102,
+        "y": 264,
+        "width": 24,
+        "height": 13,
+        "x2": 126,
+        "y2": 277,
+        "center_x": 114,
+        "center_y": 270
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 4,
+      "line_num": 2,
+      "word_num": 3
+    },
+    {
+      "text": "most",
+      "confidence": 96,
+      "bbox": {
+        "x": 133,
+        "y": 264,
+        "width": 38,
+        "height": 13,
+        "x2": 171,
+        "y2": 277,
+        "center_x": 152,
+        "center_y": 270
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 4,
+      "line_num": 2,
+      "word_num": 4
+    },
+    {
+      "text": "beautiful",
+      "confidence": 95,
+      "bbox": {
+        "x": 177,
+        "y": 264,
+        "width": 66,
+        "height": 13,
+        "x2": 243,
+        "y2": 277,
+        "center_x": 210,
+        "center_y": 270
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 4,
+      "line_num": 2,
+      "word_num": 5
+    },
+    {
+      "text": "thing",
+      "confidence": 96,
+      "bbox": {
+        "x": 249,
+        "y": 264,
+        "width": 38,
+        "height": 17,
+        "x2": 287,
+        "y2": 281,
+        "center_x": 268,
+        "center_y": 272
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 4,
+      "line_num": 2,
+      "word_num": 6
+    },
+    {
+      "text": "|",
+      "confidence": 95,
+      "bbox": {
+        "x": 295,
+        "y": 264,
+        "width": 1,
+        "height": 13,
+        "x2": 296,
+        "y2": 277,
+        "center_x": 295,
+        "center_y": 270
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 4,
+      "line_num": 2,
+      "word_num": 7
+    },
+    {
+      "text": "have",
+      "confidence": 96,
+      "bbox": {
+        "x": 304,
+        "y": 264,
+        "width": 37,
+        "height": 13,
+        "x2": 341,
+        "y2": 277,
+        "center_x": 322,
+        "center_y": 270
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 4,
+      "line_num": 2,
+      "word_num": 8
+    },
+    {
+      "text": "ever",
+      "confidence": 96,
+      "bbox": {
+        "x": 348,
+        "y": 267,
+        "width": 34,
+        "height": 10,
+        "x2": 382,
+        "y2": 277,
+        "center_x": 365,
+        "center_y": 272
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 4,
+      "line_num": 2,
+      "word_num": 9
+    },
+    {
+      "text": "seen.",
+      "confidence": 96,
+      "bbox": {
+        "x": 388,
+        "y": 267,
+        "width": 42,
+        "height": 10,
+        "x2": 430,
+        "y2": 277,
+        "center_x": 409,
+        "center_y": 272
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 4,
+      "line_num": 2,
+      "word_num": 10
+    },
+    {
+      "text": "|",
+      "confidence": 91,
+      "bbox": {
+        "x": 52,
+        "y": 294,
+        "width": 1,
+        "height": 13,
+        "x2": 53,
+        "y2": 307,
+        "center_x": 52,
+        "center_y": 300
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 5,
+      "line_num": 1,
+      "word_num": 1
+    },
+    {
+      "text": "can't",
+      "confidence": 94,
+      "bbox": {
+        "x": 61,
+        "y": 294,
+        "width": 36,
+        "height": 13,
+        "x2": 97,
+        "y2": 307,
+        "center_x": 79,
+        "center_y": 300
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 5,
+      "line_num": 1,
+      "word_num": 2
+    },
+    {
+      "text": "wait",
+      "confidence": 95,
+      "bbox": {
+        "x": 102,
+        "y": 294,
+        "width": 32,
+        "height": 13,
+        "x2": 134,
+        "y2": 307,
+        "center_x": 118,
+        "center_y": 300
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 5,
+      "line_num": 1,
+      "word_num": 3
+    },
+    {
+      "text": "to",
+      "confidence": 96,
+      "bbox": {
+        "x": 139,
+        "y": 294,
+        "width": 14,
+        "height": 13,
+        "x2": 153,
+        "y2": 307,
+        "center_x": 146,
+        "center_y": 300
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 5,
+      "line_num": 1,
+      "word_num": 4
+    },
+    {
+      "text": "go",
+      "confidence": 96,
+      "bbox": {
+        "x": 160,
+        "y": 297,
+        "width": 18,
+        "height": 14,
+        "x2": 178,
+        "y2": 311,
+        "center_x": 169,
+        "center_y": 304
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 5,
+      "line_num": 1,
+      "word_num": 5
+    },
+    {
+      "text": "back",
+      "confidence": 96,
+      "bbox": {
+        "x": 185,
+        "y": 294,
+        "width": 37,
+        "height": 13,
+        "x2": 222,
+        "y2": 307,
+        "center_x": 203,
+        "center_y": 300
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 5,
+      "line_num": 1,
+      "word_num": 6
+    },
+    {
+      "text": "next",
+      "confidence": 96,
+      "bbox": {
+        "x": 228,
+        "y": 294,
+        "width": 33,
+        "height": 13,
+        "x2": 261,
+        "y2": 307,
+        "center_x": 244,
+        "center_y": 300
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 5,
+      "line_num": 1,
+      "word_num": 7
+    },
+    {
+      "text": "year.",
+      "confidence": 96,
+      "bbox": {
+        "x": 266,
+        "y": 297,
+        "width": 39,
+        "height": 14,
+        "x2": 305,
+        "y2": 311,
+        "center_x": 285,
+        "center_y": 304
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 5,
+      "line_num": 1,
+      "word_num": 8
+    },
+    {
+      "text": "The",
+      "confidence": 96,
+      "bbox": {
+        "x": 50,
+        "y": 344,
+        "width": 30,
+        "height": 13,
+        "x2": 80,
+        "y2": 357,
+        "center_x": 65,
+        "center_y": 350
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 6,
+      "line_num": 1,
+      "word_num": 1
+    },
+    {
+      "text": "End",
+      "confidence": 96,
+      "bbox": {
+        "x": 87,
+        "y": 344,
+        "width": 30,
+        "height": 13,
+        "x2": 117,
+        "y2": 357,
+        "center_x": 102,
+        "center_y": 350
+      },
+      "level": 5,
+      "block_num": 1,
+      "par_num": 6,
+      "line_num": 1,
+      "word_num": 2
+    }
+  ],
+  "lines": [],
+  "paragraphs": [],
+  "full_text": "My Summer Vacation\n\nThis summer | went to the beach with my family.\n\nWe had so much fun playing in the sand and swimming.\n| built a huge sand castle that looked like a real castle!\nMy little sister helped me collect seashells.\n\nThe best part was watching the sunset over the ocean.\nIt was the most beautiful thing | have ever seen.\n\n| can't wait to go back next year.\n\nThe End",
+  "confidence_stats": {
+    "mean": 95.61643835616438,
+    "min": 91,
+    "max": 97,
+    "std": 1.0287662112612923
+  }
+}
